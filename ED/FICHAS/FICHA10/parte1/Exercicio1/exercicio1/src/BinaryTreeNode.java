@@ -1,4 +1,5 @@
-public class BinaryTreeNode<T>{
+public class BinaryTreeNode<T> {
+    
     private T element;
     private BinaryTreeNode<T> left;
     private BinaryTreeNode<T> right;
