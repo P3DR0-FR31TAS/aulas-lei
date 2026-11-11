@@ -1,23 +1,26 @@
 #include <stdio.h>
 
-int ordenado(int array[], int tam) {
+int ordenado(int array[], int tam)
+{
 
-    for (int i = 0; i < tam; i++)
+    int ordenado = 1;
+
+    for (int i = 0; i < tam - 1; i++)
     {
-        for (int j = i + 1; j < tam; j++)
-        {            
-            if (array[i] < array[j])
-            {
-
-            }
+        if (array[i] > array[i + 1])
+        {
+            return 0;
         }
-        
     }
-    
+
+    return ordenado;
 }
 
-int main() {
+int main()
+{
+    int array[5] = {2, 1, 3, 4, 5};
 
+    printf("%d", ordenado(array, 5));
 
     return 0;
 }
